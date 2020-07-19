@@ -1,0 +1,41 @@
+doctype html
+
+html
+	head
+		title Add Employee
+	body
+		p #{message}
+		div
+			form(action = 'add-employee', method = 'post')
+				div
+					label(for = 'firstName') FirstName :&nbsp;
+					input(type = 'text', name = 'firstName')
+				br
+
+				div
+					label(for = 'lastName') LastName :&nbsp;
+					input(type = 'text', name = 'lastName')
+				br
+
+				div
+					label(for = 'middleName') MiddleName : &nbsp;
+					input(type = 'text', name = 'middleName')
+				br
+
+				div
+					label(for = 'email') Email : &nbsp;
+					input(type = 'email', name = 'email')
+				br
+
+				div
+					label(for = 'salary') Salary : &nbsp;
+					input(type = 'text', name = 'salary')
+				br
+
+				div
+					label(for = 'password') Password : &nbsp;
+					input(type = 'password', name = 'password')
+				br
+
+				div
+					button(type = 'submit') Add Employee
