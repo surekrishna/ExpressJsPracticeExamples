@@ -1,0 +1,13 @@
+html
+	head
+		title #{title}
+		body
+			if(user)
+				p1 Hello #{user.username}
+			else
+				form.login#login(action = 'login', method = 'post')
+					input.username#username(type = 'text', name = 'username')
+					br
+					input.password#password(type = 'password', name = 'password')
+					br
+					button Login

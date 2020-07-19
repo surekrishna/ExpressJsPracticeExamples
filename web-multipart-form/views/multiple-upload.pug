@@ -1,0 +1,16 @@
+doctype html
+
+html
+	head
+		title Multiple File Upload
+	body
+		h1 #{message}
+		div
+			form#single-file(action = '/multiple-file', enctype = 'multipart/form-data', method = 'post')
+				div
+					label(for = 'photos') Multiple Files
+					input#single-file(type = 'file', name = 'photos', accept = '.jpg, .jpeg, .png')
+					input#single-file(type = 'file', name = 'photos', accept = '.jpg, .jpeg, .png')
+
+				div
+					button(type = 'submit') Upload

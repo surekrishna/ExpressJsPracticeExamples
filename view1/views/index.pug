@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  -
+   function sum(a, b) {
+   	return a + b;
+   }
+   var id = 'EMP001';
+
+  p= sum(1, 5)
+  h1= id
+  

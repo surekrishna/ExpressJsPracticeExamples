@@ -1,0 +1,15 @@
+doctype html
+
+html
+	head
+		title Single File Upload
+	body
+		h1 #{message}
+		div
+			form#single-file(action = '/single-file', enctype = 'multipart/form-data', method = 'post')
+				div
+					label(for = 'avatar') Profile Picture
+					input#single-file(type = 'file', name = 'avatar', accept = '.jpg, .jpeg, .png')
+
+				div
+					button(type = 'submit') Upload

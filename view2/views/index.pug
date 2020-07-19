@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  -
+   var total = 0;
+   for(var i = 0 ; i < 10 ; i++)
+   	total += i;
+
+   var states = ['Andhra Pradesh', 'Karnataka'];
+  
+  ul
+   each state in states
+    li= state
+  
+  p Total :
+  p= total
+
