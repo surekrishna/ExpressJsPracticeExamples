@@ -1,0 +1,19 @@
+doctype html
+
+html
+	head
+		title Login
+	body
+		form(action = '/employee/login', method = 'post')
+			div
+				label(for = 'username') UserName :
+				input(type = 'text', name = 'username', placeholder = 'enter username')
+			br
+
+			div
+				label(for = 'password') Password :
+				input(type = 'password' name = 'password', placeholder = 'enter password')
+			br
+
+			button(type = 'submit') Login
+
